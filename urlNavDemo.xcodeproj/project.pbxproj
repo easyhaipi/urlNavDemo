@@ -13,6 +13,8 @@
 		67597A461E72B80000BF81FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67597A441E72B80000BF81FC /* Main.storyboard */; };
 		67597A481E72B80000BF81FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67597A471E72B80000BF81FC /* Assets.xcassets */; };
 		67597A4B1E72B80000BF81FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67597A491E72B80000BF81FC /* LaunchScreen.storyboard */; };
+		67597A541E72B83B00BF81FC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67597A531E72B83B00BF81FC /* MapKit.framework */; };
+		67597A561E72B84400BF81FC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67597A551E72B84400BF81FC /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		67597A471E72B80000BF81FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67597A4A1E72B80000BF81FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67597A4C1E72B80000BF81FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67597A531E72B83B00BF81FC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		67597A551E72B84400BF81FC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67597A561E72B84400BF81FC /* CoreLocation.framework in Frameworks */,
+				67597A541E72B83B00BF81FC /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				67597A3A1E72B80000BF81FC /* urlNavDemo */,
 				67597A391E72B80000BF81FC /* Products */,
+				67597A521E72B83B00BF81FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		67597A521E72B83B00BF81FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67597A551E72B84400BF81FC /* CoreLocation.framework */,
+				67597A531E72B83B00BF81FC /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,7 +126,8 @@
 				TargetAttributes = {
 					67597A371E72B80000BF81FC = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 2JZKS6FG6P;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -272,10 +289,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2JZKS6FG6P;
 				INFOPLIST_FILE = urlNavDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = adss.urlNavDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b609c798-092c-4e83-b068-45f9833ab606";
+				PROVISIONING_PROFILE_SPECIFIER = test0081;
 			};
 			name = Debug;
 		};
@@ -283,10 +303,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2JZKS6FG6P;
 				INFOPLIST_FILE = urlNavDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = adss.urlNavDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b609c798-092c-4e83-b068-45f9833ab606";
+				PROVISIONING_PROFILE_SPECIFIER = test0081;
 			};
 			name = Release;
 		};
